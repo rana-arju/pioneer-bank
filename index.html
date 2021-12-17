@@ -1,11 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pioneer Bank Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Welcome</h1>
+    <div class="container">
+        <div id="login-area">
+            <h2 class="text-center">Welcome To Pioneer Bank</h2>
+            <hr>
+            <div class="submit-area">
+                <h2>Login/Register</h2>
+                <input type="email" placeholder="Email" class="form-control">
+                <br />
+                <input type="password" name="" id="" placeholder="Password" class="form-control">
+                <br />
+                <input type="submit" value="login" class="btn btn-success" id="login">
+            </div>
+        </div>
+        <div id="tranjection-area">
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="deposit status">
+                        <h2>Deposit</h2>
+                        <h1>$ <span id="currentDepo">00</span></h1>
+                    </div>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="withdrew status">
+                        <h2>Withdrew</h2>
+                        <h1>$ 00</h1>
+                    </div>
+
+                </div>
+                <div class="col-md-4 ">
+                    <div class="balance status">
+                        <h2>Balance</h2>
+                        <h1>$ <span id="currentBalance">1240</span></h1>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h2>Deposit</h2>
+                        <input type="text" id="depositAmount" class="form-control" placeholder="Amout of $">
+                        <br />
+                        <input type="submit" value="Deposit" class="btn btn-success" id="deposit">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="submit-area">
+                        <h2>Withdrew</h2>
+                        <input type="text" id="withdrawAmmount" class="form-control" placeholder="Amout of $">
+                        <br />
+                        <input type="submit" id="addWithdraw" value="Withdrew" class="btn btn-success" id="withdrew">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
